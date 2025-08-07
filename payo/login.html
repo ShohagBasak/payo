@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payo MFS Login</title>
+    <!-- google font cdn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <!-- daisy & tailwind cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="./assets/Group.png">
+
+    <style>
+        .font-outfit {
+            font-family: "Outfit", sans-serif;
+        }
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'Payo-primary': '#0874F2',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="font-outfit">
+    <main class="flex justify-center">
+        <div class="mockup-phone">
+            <div class="camera"></div>
+            <div class="display">
+                <div class="artboard artboard-demo phone-3">
+                    <div class="relative -top-12">
+                        <div class="relative z-10">
+                            <img src="./assets/bg.png" alt="">
+                            <div class="absolute top-6 left-32">
+                                <img src="./assets/Group.png" alt="">
+                            </div>
+                        </div>
+                        <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl z-40 absolute top-28">
+                            <form class="card-body">
+                                <div class="form-control">
+                                    <label class="label">
+                                        <span class="label-text font-medium">Mobile Number</span>
+                                    </label>
+                                    <input id="phone-number" type="text" placeholder="Enter your number" class="input input-bordered rounded-3xl bg-gray-200" required />
+                                </div>
+                                <div class="form-control">
+                                    <label class="label">
+                                        <span class="label-text font-medium">4 Digit Pin</span>
+                                    </label>
+                                    <input id="pin-number" type="password" placeholder="Enter 4 Digit Pin" class="input input-bordered rounded-3xl bg-gray-200"
+                                        required />
+                                </div>
+                                <div class="form-control mt-6">
+                                    <button id="button-login" class="btn border rounded-3xl bg-Payo-primary text-white hover:bg-Payo-primary">Login</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="js/login.js"></script>
+</body>
+
+</html>
